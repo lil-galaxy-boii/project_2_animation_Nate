@@ -3,27 +3,43 @@
   <head>
     <meta charset="utf-8">
      <link rel="stylesheet" href="style.css">
+     <style>
+@import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
+</style>
   </head>
   <body>
 <svg width="1000" height="1000">
 
 <circle cx= "100" cy="100" r="40" fill="black"/>
 <ellipse cx= "100" cy= "150" rx= "30" ry= "50" fill= "black"/>
-<line x1= "150" y1= "150" x2= "180" y2= "70" stroke= "red" stroke-width="8"/>
+<line x1= "150" y1= "150" x2= "180" y2= "70" stroke= "red" stroke-width="8">
+  <animate attributeName="opacity" from="0.5" to="1" dur="3s" repeatCount="indefinite"/>
+</line>
 <ellipse cx= "130" cy= "150" rx= "25" ry= "10" fill= "black"/>
 <rect x="187" y="80" width="10" height="20" fill="grey" transform= "rotate (20)"/>
 <ellipse cx= "120" cy= "195" rx= "25" ry= "10" fill= "black"/>
-<circle cx="130" cy="100" r=10 fill="red"/>
+<circle cx="130" cy="100" r=10 fill="red">
+  <animate attributeName="cx" from="130" to="140" begin="mouseover" dur="5s"/>
+</circle>
 
 <rect x="300" y="75" width="140" height="130" fill="hotpink" opacity="0.8"/>
 <rect x="300" y="140" width="20" height="40" fill="white" opacity="0.8"/>
 <ellipse cx= "300" cy= "95" rx= "10" ry= "20" fill= "white" opacity="0.8"/>
-<ellipse cx= "295" cy= "95" rx= "8" ry= "10" fill= "yellow"/>
-<line x1= "330" y1= "170" x2= "200" y2= "60" stroke= "#51B1DA" stroke-width="8"/>
-<rect x="487" y="380" width="10" height="20" fill="blue" transform= "rotate (20)"/>
-
+<ellipse cx= "295" cy= "95" rx= "8" ry= "10" fill= "yellow">
+  <animate attributeName="fill" from="yellow" to="red" begin="click" dur="5s" id="circle-animation"/>
+</ellipse>
+<line x1= "330" y1= "170" x2= "200" y2= "60" stroke= "#51B1DA" stroke-width="8">
+<animate attributeName="opacity" from="1" to="0.5" dur="3s" repeatCount="indefinite"/></line>
+<rect x="78" y="360" width="10" height="20" fill="grey" transform= "rotate (-50)"/>
 
 <rect x="0" y="200" width="1000" height="1000" fill="#211E1F"/>
+  <text x="100" y="250" fill="yellow" font-family: 'Press Start 2P', cursive>Star Wars: What Went Wrong</text>
+<text x="100" y="300" fill="white"  font-family: 'Press Start 2P', cursive>As the Sith, Ragsdale, raised his lightsaber to destroy</text>
+  <text x="100" y="350" fill="white" font-family: 'Press Start 2P', cursive>the enemy, he used the Force inside him to hypnotize</text>
+  <text x="100" y="400" fill="white" font-family: 'Press Start 2P', cursive> the cursed Jedi Warrior Ear Eyes. With Ear Eyes now</text>
+  <text x="100" y="450" fill="white" font-family: 'Press Start 2P', cursive> under his control, he could infiltrate the Jedi head-</text>
+  <text x="100" y="500" fill="white" font-family: 'Press Start 2P', cursive>quarters and recapture C-3PO (obviously the most </text>
+  <text x="100" y="550" fill="white" font-family: 'Press Start 2P', cursive>important character).</text>
 </svg>
   </body>
  </html>
